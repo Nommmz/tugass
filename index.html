@@ -40,61 +40,90 @@
             <h2>Heading 2</h2>
             <h3>Heading 3</h3>
 
-            <h3>Paragraf</h3>
-            <p>Ini adalah sebuah paragraf.</p>
-            <p>Ini adalah paragraf lainnya.</p>
+            <h3>Paragraf dan Format Text</h3>
+            <p>Ini adalah sebuah paragraf dengan <b>teks tebal</b>, <i>teks miring</i>, dan <u>teks bergaris bawah</u>.</p>
+            <p>Ini adalah paragraf lainnya dengan <strong>teks penting</strong> dan <em>teks yang ditekankan</em>.</p>
+            <p>Contoh penggunaan span: <span>Teks dalam span</span></p>
 
             <h3>List</h3>
             <h4>Unordered List</h4>
             <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+                <li>contoh 1</li>
+                <li>contoh 2</li>
+                <li>contoh 3</li>
             </ul>
 
             <h4>Ordered List</h4>
             <ol>
-                <li>Langkah 1</li>
-                <li>Langkah 2</li>
-                <li>Langkah 3</li>
+                <li>contoh 1</li>
+                <li>contoh 2</li>
+                <li>contoh 3</li>
             </ol>
 
-            <h3>Tabel</h3>
+            <h4>Definition List</h4>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hypertext Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+
+            <h3>Tabel dengan Colspan dan Rowspan</h3>
             <table border="1">
                 <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
+                    <th colspan="2">Header yang mencakup 2 kolom</th>
                 </tr>
                 <tr>
-                    <td>Baris 1, Kolom 1</td>
+                    <td rowspan="2">Cell yang mencakup 2 baris</td>
                     <td>Baris 1, Kolom 2</td>
                 </tr>
                 <tr>
-                    <td>Baris 2, Kolom 1</td>
                     <td>Baris 2, Kolom 2</td>
                 </tr>
             </table>
 
             <h3>Link</h3>
-            <a href="https://www.example.com">Ini adalah sebuah link</a>
+            <p>
+                <a href="https://www.example.com">Link ke website eksternal</a><br>
+                <a href="#form-section">Link ke bagian form di halaman ini</a>
+            </p>
 
             <h3>Gambar</h3>
-            <img src="https://via.placeholder.com/150" alt="Gambar placeholder">
+            <img src="Uper.jpeg" alt="Gambar uper" width="300" height="200">
         </section>
 
-        <section>
+        <section id="form-section">
             <h2>Form HTML</h2>
-            <form action="#" method="post">
+            <form action="https://universitaspertamina.ac.id/submit-form" method="post">
                 <label for="nama">Nama:</label>
-                <input type="text" id="nama" name="nama"><br><br>
+                <input type="text" id="nama" name="nama" required><br><br>
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <label for="jenis-kelamin">Jenis Kelamin:</label>
+                <select id="jenis-kelamin" name="jenis-kelamin">
+                    <option value="pria">Pria</option>
+                    <option value="wanita">Wanita</option>
+                    <option value="lainnya">Lainnya</option>
+                </select><br><br>
+                
+                <label>Hobi:</label><br>
+                <input type="checkbox" id="hobi-membaca" name="hobi" value="membaca">
+                <label for="hobi-membaca">Membaca</label><br>
+                <input type="checkbox" id="hobi-olahraga" name="hobi" value="olahraga">
+                <label for="hobi-olahraga">Olahraga</label><br>
+                <input type="checkbox" id="hobi-musik" name="hobi" value="musik">
+                <label for="hobi-musik">Musik</label><br><br>
                 
                 <label for="pesan">Pesan:</label><br>
                 <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
                 
                 <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
             </form>
         </section>
     </main>
