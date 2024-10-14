@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemrograman Web Week 2 - HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Pemrograman Web Week 2 - HTML</h1>
+        <p>Ilmu Komputer Universitas Pertamina</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pengenalan HTML</h2>
+            <p>HTML (Hypertext Markup Language) adalah bahasa markup yang digunakan untuk membuat dokumen hypertext. HTML tidak membedakan huruf besar dengan kecil (kecuali versi XHTML strict).</p>
+        </section>
+
+        <section>
+            <h2>Struktur Dasar HTML</h2>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Konten halaman di sini --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Elemen HTML</h2>
+            <h3>Heading</h3>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+
+            <h3>Paragraf</h3>
+            <p>Ini adalah sebuah paragraf.</p>
+            <p>Ini adalah paragraf lainnya.</p>
+
+            <h3>List</h3>
+            <h4>Unordered List</h4>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <h4>Ordered List</h4>
+            <ol>
+                <li>Langkah 1</li>
+                <li>Langkah 2</li>
+                <li>Langkah 3</li>
+            </ol>
+
+            <h3>Tabel</h3>
+            <table border="1">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+                <tr>
+                    <td>Baris 1, Kolom 1</td>
+                    <td>Baris 1, Kolom 2</td>
+                </tr>
+                <tr>
+                    <td>Baris 2, Kolom 1</td>
+                    <td>Baris 2, Kolom 2</td>
+                </tr>
+            </table>
+
+            <h3>Link</h3>
+            <a href="https://www.example.com">Ini adalah sebuah link</a>
+
+            <h3>Gambar</h3>
+            <img src="https://via.placeholder.com/150" alt="Gambar placeholder">
+        </section>
+
+        <section>
+            <h2>Form HTML</h2>
+            <form action="#" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+                
+                <input type="submit" value="Kirim">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ilmu Komputer Universitas Pertamina</p>
+    </footer>
+</body>
+</html>
